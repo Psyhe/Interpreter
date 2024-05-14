@@ -1,0 +1,26 @@
+// Prezentacja punktów: 2, 7
+def void change_int(var int a) {
+    a = (3 + 11) / 2 + 4;
+}
+
+def bool is_even(int a) {
+    if (a % 2 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+def int main() {
+    var int a = 10;
+    printInt(a);
+    printBool(is_even(a));
+
+    change_int(a);
+    printInt(a);
+    printBool(is_even(a));
+    return 0;
+}
+
+// Output: 10 true 11 false

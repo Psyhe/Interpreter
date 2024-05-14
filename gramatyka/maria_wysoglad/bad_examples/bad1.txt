@@ -1,0 +1,16 @@
+def void print_given(int a, string s, bool b) {
+    printInt(a);
+    printString(s);
+    printBool(b);
+}
+
+def int main() {
+    var int a = 10;
+    var string s = "siema";
+    var bool b = true;
+    a = b;
+    print_given(a, s, b);
+    return 0;
+}
+
+// Przypisanie niezgodnych typów (przypisanie do zmiennej int zmiennej bool).

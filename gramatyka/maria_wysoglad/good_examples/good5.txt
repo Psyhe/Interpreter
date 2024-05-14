@@ -1,0 +1,20 @@
+// Prezentacja punktów: 16
+
+def int main() {
+    var int x = 10;
+    var int y = 12;
+    while (x < 100) {
+        printInt(x);
+        if (x == y) {
+            break;
+        }
+        else {
+            x = x + 1;
+            continue;
+        }
+        printString("siema");
+    }
+    return 0;
+}
+
+// Output: 10 11 12

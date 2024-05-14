@@ -1,0 +1,23 @@
+def void ex((int, bool)->int fun, bool b, int a) {
+    printInt(fun(a, b));
+}
+
+def int main() {
+
+    var example(int, bool) -> int example = 
+    (int a, bool b) -> int {
+        if (b == true) {
+            return a;
+        }
+        else {
+            return a + 3;
+        }
+    }
+
+    ex(example, 10, true);
+
+    printInt(example(10, false));
+    return 0;
+}
+
+// Brak słowa kluczowego lambda przy deklaracji zmiennej example.

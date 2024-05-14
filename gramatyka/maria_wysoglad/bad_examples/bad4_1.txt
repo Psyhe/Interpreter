@@ -1,0 +1,16 @@
+
+def int fun_wrap() {
+    def int fun_in() {
+        return x;
+    }
+
+    return fun_in();
+}
+
+var int x = 17;
+
+def int main() {
+    printInt(fun_wrap());
+    return 0;
+}
+// Użycie niezadeklarowanej zmiennej x.

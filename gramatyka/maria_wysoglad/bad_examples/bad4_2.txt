@@ -1,0 +1,17 @@
+var int x = 17;
+
+def int fun_wrap() {
+    var int x = 2137;
+    def int fun_in() {
+        return x;
+    }
+
+    return fun_in();
+
+
+def int main() {
+    printInt(fun_wrap());
+    return 0;
+}
+
+// Brak nawiasu zamykającego ciało funkcji.

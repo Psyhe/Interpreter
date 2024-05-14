@@ -1,0 +1,26 @@
+var int global = 10;
+
+def int generate_fib(int n) {
+    if (n > 2) {
+        return generate_fib(n-1) + generate_fib(n-2);
+    }
+    else {
+        return 1;
+    }
+}
+
+void print_local(int global) {
+    printInt(global);
+}
+
+def int main() {
+    var int x = 5;
+    x = generate_fib(x);
+
+    printInt(x);
+    print_local(x);
+    printInt(global);
+    return 0;
+}
+
+// Brak słowa kluczowego def przy deklaracji funkcji.
