@@ -1,0 +1,10 @@
+def void noReturn() {
+    printInt(10);
+}
+
+def  void main() {
+    noReturn();
+    printBool(true);
+
+    return;
+}

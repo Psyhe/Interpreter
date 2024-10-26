@@ -1,0 +1,31 @@
+def void change_int(var int a) {
+    a = (3 + 11) / 2 + 4;
+    return;
+}
+
+def bool is_even(int a) {
+    var bool ans = false;
+    if (a % 2 == 0) {
+        ans = true;
+    }
+    else {
+        ans = false;
+    }
+    return ans;
+}
+
+def void main() {
+    var int a = 10;
+    printBool(is_even(a));
+    var bool b = false;
+
+    change_int(a);
+    printInt(a);
+    printBool(is_even(a));
+    return;
+}
+
+// Output:
+// True
+// 11
+// False

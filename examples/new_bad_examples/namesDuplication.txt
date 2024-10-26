@@ -1,0 +1,13 @@
+def int newInt(int x, bool x) {
+    printInt(x);
+
+    return x;
+}
+
+def void main(){
+    var int x = 100;
+    var bool y = false;
+    newInt(x, y);
+
+    return;
+}

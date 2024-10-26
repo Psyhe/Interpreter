@@ -1,0 +1,40 @@
+Mój język można określić jako Latte+-. 
+Składnia języka podobna do C, z kilkoma zapożyczeniami składniowymi z innych popularnych języków.
+Znajdują się w nim elementy takie jak w standardowym Latte z kilkoma zmianami:
+
+Zmiany względem tabelki:
+1. Kosmetyczna zmiana - w Latte są już typy boolean, string, int i void, nazwa typu "boolean" została zmieniona na "bool".
+2. Arytmetyka - operacje na dodawania, odejmowania itp. na intach; arytmetyka porównawcza dla wszystkich typów jak w Haskellu; arytmetyka or i and boolowy zaimplementowany dla booli;
+konkatenacja dla stringów.
+3. Przypisanie wartości do zmiennej ma składnię var <typ> <nazwa> = <wartość>
+4. Korzystamy z dostępnych już w Latte printów dla danych typów. (Mamy funkcje wbudowane printInt, printString, printBool).
+5. While, if i else jak w oryginalnym Latte, z tym że wszystkie bloki w otoczeniu muszą być w nawiasach klamrowych dla większej przejrzystości.
+6. Język pozwala na implementację funkcji i stosowanie rekurencji.
+7. Przekazywanie argumentów przez zmienną (referencję) o składni: var <typ> <nazwa>, przez wartość o składni <typ> <nazwa>.
+9. Mój interpreter zapewnia statyczne wiązanie, globalne zmienne (por. przykłady).
+10. Obsługa błędów:
+Błędy składniowe
+
+Sprawdzanie typów:
+Niezdefiniowany identyfikator
+Niepoprawny typ
+Oczekiwano funkcję
+Niepoprawne argumenty funkcji
+Błąd returna (out of scope)
+Brak returna 
+Duplikacja identyfikatorów
+
+Błędy wykonania:
+Dzielenie przez 0.
+
+11. Przy definicji funkcji jest podawany jej typ, który definiuje typ wartości zwracanej.
+12. Język jest typowany statycznie - typy są sprawdzane przez Typechecker przed fazą ewaluacji.
+13. Jest możliwość tworzenia zagnieżdżonych funkcji.
+
+Dodatkowe informacje:
+1. return musi zawsze znajdować się wewnątrz funkcji (nawet jeśli funkcja to void)
+2. return musi zawierać się w ciele funkcji (nie np. wewnątrz ifa)
+
+Tabelka zawiera informacje o funkcjonalnościach zrealizowanych.
+
+Wspomagałam się w trakcie pisania kodu githubCopilotem oraz chatem GPT.

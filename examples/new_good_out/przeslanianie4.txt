@@ -1,0 +1,9 @@
+INSIDE MAIN2
+5
+INSIDE X
+9
+9
+s
+Koniec main2
+9
+Koniec main

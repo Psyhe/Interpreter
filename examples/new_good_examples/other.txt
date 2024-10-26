@@ -1,0 +1,13 @@
+def void main() {
+    var int a = 12;
+    var int b = 15;
+    while (b > 10) {
+        var int a = 0;
+        a = a - 1;
+        printInt(a);
+        b = b - 1;
+    }
+    printInt(a);
+
+    return;
+}

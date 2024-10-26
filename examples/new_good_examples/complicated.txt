@@ -1,0 +1,66 @@
+def int dodawanie(int x, int y) {
+    return x + y;
+}
+
+def void doDajLiczbe(var int x, int y) {
+    x = x + y;
+    return;
+}
+
+def void print() {
+    printString("ZEWNETRZNA");
+    return;
+}
+
+def int przeksztalc(int x, int y) {
+    if (x < y) {
+        while (x < y) {
+            var int y = 3;
+            printInt(y);
+            x = x + 10;
+        }
+        printInt(y);
+    }
+    else {
+        if (y == x) {
+            printString("EQU");
+        }
+        else {
+            y = y + 9;
+        }
+    }
+
+    return y - x;
+}
+
+def string s(string x) {
+    def void print() {
+        printString("WEWNETRZNA");
+        return;
+    }
+
+    print();
+    x = "siema " ++ x;
+    printString(x);
+    return x;
+}
+
+def void main() {
+    var string name = "Ela";
+    print();
+    var string hi = s(name);
+    printString(hi);
+    print();
+
+    var int x = 10;
+    var int y = 5;
+    doDajLiczbe(x, y);
+    printInt(x);
+    var int z = dodawanie(x, y);
+    printString("Dzialania");
+    printInt(y);
+    printInt(z);
+    var int res = przeksztalc(y, z);
+    printInt(res);
+    return;
+}

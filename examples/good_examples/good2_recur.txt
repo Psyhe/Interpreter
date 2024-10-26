@@ -1,0 +1,17 @@
+def int fibonacci(int n) {
+    var int ans = 0;
+    if (n <= 1) {
+        ans = n;
+    }
+    else {
+        ans = fibonacci(n - 1) + fibonacci(n - 2);
+    }
+    return ans;
+}
+
+def void main() {
+    var int n = 8;
+    var int fib = fibonacci(n);
+    printInt(fib);
+    return;
+}

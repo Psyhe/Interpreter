@@ -1,0 +1,14 @@
+def void p() {
+    return;
+}
+
+def void r() {
+    return ;
+}
+
+def void main() {
+    if (r() == p()) {
+        printInt(10);
+    }
+    return;
+}

@@ -1,0 +1,28 @@
+var int g = 10;
+
+def void print(int a) {
+    var int g = 5 + a;
+    printInt(g);
+    return;
+}
+
+def void print_global() {
+    printInt(g);
+    return;
+}
+
+
+def void main() {
+    printInt(g);
+    print(3);
+    g = g + 6;
+    printInt(g);
+    print_global();
+    return;
+}
+
+// Output:
+// 10
+// 8
+// 16
+// 16

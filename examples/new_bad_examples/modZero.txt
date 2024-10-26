@@ -1,0 +1,13 @@
+def int modulo(int a, int b) {
+    var int res = a % b;
+
+    return res;
+}
+
+def void main() {
+    var int x = 10;
+    var int y = 0;
+    var int z = modulo(x, y);
+    printInt(z);
+    return;
+}

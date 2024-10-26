@@ -1,0 +1,10 @@
+def int x(int x) {
+    printInt(x);
+    return x;
+}
+
+def void main() {
+    var int y = x(10);
+    printInt(y);
+    return;
+}

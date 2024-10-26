@@ -1,0 +1,25 @@
+def void main() {
+    var int a = 2115;
+    var bool x = true;
+    var bool y = false;
+    var int b = 100;
+    
+    if (x > y) {
+        printInt(a);
+    }
+    else {
+        printInt(b);
+    }
+
+    var string s = "bb";
+    var string s1 = "aab";
+
+    if (s < s1) {
+        printBool(true);
+    }
+    else {
+        printBool(false);
+    }
+
+    return;
+}

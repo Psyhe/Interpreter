@@ -1,0 +1,10 @@
+def bool hi() {
+    return true;
+}
+
+def void main() {
+    var int x = hi();
+
+    printInt(x);
+    return;
+}

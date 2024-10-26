@@ -1,0 +1,24 @@
+// Przekazywanie przez referencję.
+def int add_5_other(var int a, var int b) {
+    a = a + 5;
+    b = b + 5;
+    
+    return a;
+}
+
+// Przekazywanie przez wartość.
+def int add_4(int a, int b) {
+    a = a + 4;
+    b = b + 4;
+    return a;
+}
+
+def void main() {
+    var int a = 10;
+    var int b = 20;
+    a = add_4(a, b);
+    a = add_5_other(a, b);
+    printInt(a);
+    printInt(b);
+    return;
+}

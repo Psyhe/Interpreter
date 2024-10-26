@@ -1,0 +1,7 @@
+def void main() {
+    if (x == 3) {
+        printInd(x);
+    }
+
+    return;
+}

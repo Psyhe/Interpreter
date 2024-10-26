@@ -1,0 +1,12 @@
+def int hello(int x, int y) {
+    printString("Hello");
+
+    return x + y;
+}
+
+def void main() {
+    var int x = 10;
+    var bool y = true;
+    printInt(hello(x, y));
+    return;
+}

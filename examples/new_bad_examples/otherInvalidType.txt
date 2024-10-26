@@ -1,0 +1,11 @@
+def int returnTest() {
+    var bool siema = false;
+
+    return;
+}
+
+def void main() {
+    var int x = siema();
+
+    return;
+}

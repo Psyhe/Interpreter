@@ -1,0 +1,26 @@
+def void main() {
+    var int a = 2115;
+    var int x = 1;
+    var int b = 100;
+
+
+
+    if (x == 1) {
+        var string x = "B";
+        printString(x);
+        printInt(a);
+    }
+    else {
+        printInt(b);
+    }
+
+    if (x == 2) {
+        printInt(a);
+    }
+    else {
+        var string x = "A";
+        printInt(b);
+    }
+    printInt(x);
+    return;
+}

@@ -1,0 +1,8 @@
+def void main() {
+    var int x = 10;
+    x = 10 / 0;
+    printInt(x);
+    return;
+}
+
+// Błąd - dzielenie przez 0.

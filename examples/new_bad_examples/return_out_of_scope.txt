@@ -1,0 +1,15 @@
+def int p() {
+    if (1 == 1) {
+        return 4;
+    }
+    return 5;
+    var int x = 4;
+    printInt(4);
+}
+
+def void main() {
+    var int x = p();
+    printInt(x);
+
+    return;
+}

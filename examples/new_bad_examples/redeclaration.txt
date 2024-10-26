@@ -1,0 +1,15 @@
+def int x(int y) {
+    printInt(y);
+    return y;
+}
+
+def int x(int y) {
+    printStrint("Hello");
+    return y;
+}
+
+def void main() {
+    var int y = 10;
+    var int z = x(y);
+    return;
+}

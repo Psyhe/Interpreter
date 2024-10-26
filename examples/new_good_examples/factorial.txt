@@ -1,0 +1,14 @@
+def int factorial(int n) {
+    var int ans = 1;
+    if (n > 1) {
+        ans = n * factorial(n - 1);
+    }
+    return ans;
+}
+
+def void main() {
+    var int n = 5;
+    var int fact = factorial(n);
+    printInt(fact);
+    return;
+}

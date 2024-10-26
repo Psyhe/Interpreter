@@ -1,0 +1,14 @@
+def void p() {
+    return;
+}
+
+def void r() {
+    var void b = p();
+    return ;
+}
+
+def void main() {
+    r();
+    printInt(10);
+    return ;
+}

@@ -1,0 +1,16 @@
+def void p() {
+    var int x = 10;
+    printInt(x);
+    return;
+}
+
+def void main() {
+    p();
+    printInt(12);
+
+    return;
+}
+
+// Output:
+// 10
+// 12

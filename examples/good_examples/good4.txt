@@ -1,0 +1,14 @@
+def int fun_wrap() {
+    var int x = 2137;
+    def int fun_in() {
+        return x;
+    }
+
+    return fun_in();
+}
+
+def void main() {
+    printInt(fun_wrap());
+    return;
+}
+// Output: 2137

@@ -1,0 +1,16 @@
+def void main() {
+    var int a = 10;
+    var int b = 20;
+    
+    a = a + b + 2;
+
+    printInt(a);
+
+    var bool c = a < b;
+    printBool(c);
+    return;
+}
+
+// Output:
+// 32
+// False

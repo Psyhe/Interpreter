@@ -1,0 +1,7 @@
+def void main() {
+    var string x = "x";
+    var string y = "y";
+    var string z = x ++ y;
+    printString(z);
+    return;
+}

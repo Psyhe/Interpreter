@@ -1,0 +1,27 @@
+def int x(int y) {
+    printInt(y);
+    return y;
+}
+
+def void main2() {
+    printString("INSIDE MAIN2");
+    def int x(int y) {
+        printString("INSIDE X");
+        printInt(y);
+        printInt(y);
+        return y;
+    }
+
+    var int y = 9;
+    var int z = x(y);
+    printString("Koniec main2");
+    return;
+}
+
+def void main() {
+    main2();
+    var int y = 9;
+    var int z = x(y);
+    printString("Koniec main");
+    return;
+}

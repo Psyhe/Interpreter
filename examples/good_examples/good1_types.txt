@@ -1,0 +1,14 @@
+def void main() {
+    var int a = 2115;
+    var string s = "siema";
+    var bool b = true;
+    printInt(a);
+    printString(s);
+    printBool(b);
+    return;
+}
+
+// Output:
+// 2115
+// siema
+// True

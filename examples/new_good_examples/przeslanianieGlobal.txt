@@ -1,0 +1,13 @@
+var int x = 10;
+
+def void v() {
+    var int x = 9;
+    printInt(x);
+    return;
+}
+
+def void main() {
+    v();
+    printInt(x);
+    return;
+}
